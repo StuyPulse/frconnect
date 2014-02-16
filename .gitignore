@@ -27,3 +27,12 @@ proguard/
 *.ipr
 *.iws
 .idea/
+
+# Android Studio
+.gradle
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*~
+*.swp
