@@ -2,14 +2,18 @@ package com.stuypulse.frconnect;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
+import android.view.View;
+
 
 public class MainActivity extends Activity {
 
-    @Override
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
     }
 
 
@@ -20,4 +24,18 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    public void goToTasklist(View v){
+    	Intent next = new Intent(this, TaskActivity.class);
+    	startActivity(next);
+    }
+    
+    public void goToContact(View v){
+    	Intent next = new Intent(this, ContactActivity.class);
+    	startActivity(next);
+    }
+    
+    public void goToFAQ(View v){
+    	Intent next = new Intent(this, FAQActivity.class);
+    	startActivity(next);
+    }
 }
